@@ -1,0 +1,21 @@
+{
+  "name": "sfp",
+  "description": "Programa para realizar calculos financeiros",
+  "main": "index.js",
+  "authors": [
+    "Daniel Silva"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "finanças",
+    "economia"
+  ],
+  "homepage": "https://github.com/Silva01/sfp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

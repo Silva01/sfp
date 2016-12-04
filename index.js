@@ -8,7 +8,8 @@ let janela;
 app.on('ready', function() {
   janela = new electron.BrowserWindow({
     width: 1000,
-    height: 600
+    height: 600,
+    'node-integration': false
   });
 
   janela.webContents.openDevTools();

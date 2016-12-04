@@ -1,0 +1,26 @@
+{
+  "name": "sfp",
+  "version": "1.0.0",
+  "description": "Programa para realizar calculos financeiros",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silva01/sfp.git"
+  },
+  "keywords": [
+    "finanças",
+    "economia"
+  ],
+  "author": "Daniel Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Silva01/sfp/issues"
+  },
+  "homepage": "https://github.com/Silva01/sfp#readme",
+  "dependencies": {
+    "electron": "^1.4.10"
+  }
+}

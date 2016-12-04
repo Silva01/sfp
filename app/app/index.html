@@ -9,37 +9,39 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body ng-app="appApp">
+    <div class="container">
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <ul class="nav navbar-nav">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <a href="#" class="list-group-item">Gerar Parcelados</a>
+                <a href="#" class="list-group-item">Gráficos</a>
+                <a href="#" class="list-group-item">Excluir</a>
+                <a href="#" class="list-group-item">Orçamentos</a>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resumo <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <a href="#">Menu 1</a>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Relatórios <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <a href="#">Menu 1</a>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fluxo <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <a href="#">Menu 1</a>
+              </ul>
+            </li>
+          </ul>
+      </nav>
+    </div>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <a href="#" class="list-group-item">Gerar Parcelados</a>
-              <a href="#" class="list-group-item">Gráficos</a>
-              <a href="#" class="list-group-item">Excluir</a>              
-              <a href="#" class="list-group-item">Orçamentos</a>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resumo <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <a href="#">Menu 1</a>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Relatórios <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <a href="#">Menu 1</a>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fluxo <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <a href="#">Menu 1</a>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
+    <br>
+    <br><br>
     <div class="container">
       <div ng-view=""></div>
     </div>

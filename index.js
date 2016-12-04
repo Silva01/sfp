@@ -7,7 +7,7 @@ let janela;
 
 app.on('ready', function() {
   janela = new electron.BrowserWindow({
-    width: 1000,
+    width: 1050,
     height: 600,
     'node-integration': false
   });

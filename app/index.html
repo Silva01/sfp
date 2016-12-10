@@ -8,58 +8,68 @@
   </head>
   <body>
 
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--4-col">
-        <div class="mdl-shadow--2dp through mdl-shadow--16dp">
-          <div class="mdl-card__title">
-            <h3>Cadastrar Gastos</h3>
-          </div>
-          <div class="mdl-card__actions">
-            <form>
-              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="credito">
-                <input type="radio" id="credito" class="mdl-radio__button" name="opcoes" value="credito" checked>
-                <span class="mdl-radio__label">Credito</span>
-              </label>
+    <div class="flex">
+        <a href="#">+</a>
+        <div class="modal">
+          <div class="inner-modal">
+            <div class="content">
+              <div class="mdl-grid">
+                <div class="cartao mdl-shadow--2dp through mdl-shadow--16dp">
+                  <div class="mdl-card__actions">
+                    <form>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="credito">
+                          <input type="radio" id="credito" class="mdl-radio__button" name="opcoes" value="credito" checked>
+                          <span class="mdl-radio__label">Credito</span>
+                        </label>
 
-              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="debito">
-                <input type="radio" id="debito" class="mdl-radio__button" name="opcoes" value="debito" checked>
-                <span class="mdl-radio__label">Debito</span>
-              </label>
+                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="debito">
+                          <input type="radio" id="debito" class="mdl-radio__button" name="opcoes" value="debito" checked>
+                          <span class="mdl-radio__label">Debito</span>
+                        </label>
+                      </div>
 
-              <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="codigo">
-                <label class="mdl-textfield__label" for="codigo">Codigo</label>
-              </div>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="text" id="codigo">
+                        <label class="mdl-textfield__label" for="codigo">Codigo</label>
+                      </div>
 
-              <div class="mdl-textfield mdl-js-textfield">
-                <label class="mdl-textfield__label" for="vencimento">Vencimento</label>
-                <input class="mdl-textfield__input" type="date" id="vencimento">
-              </div>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <label class="mdl-textfield__label" for="vencimento">Vencimento</label>
+                        <input class="mdl-textfield__input" type="date" id="vencimento">
+                      </div>
 
-              <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="number" id="valor">
-                <label class="mdl-textfield__label" for="valor">Valor</label>
-              </div>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="number" id="valor">
+                        <label class="mdl-textfield__label" for="valor">Valor</label>
+                      </div>
 
-              <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="number" id="doc">
-                <label class="mdl-textfield__label" for="doc">N° Documento</label>
-              </div>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <input class="mdl-textfield__input" type="number" id="doc">
+                        <label class="mdl-textfield__label" for="doc">N° Documento</label>
+                      </div>
 
-              <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="pag">
-                <label class="mdl-textfield__label" for="pag">Forma de Pagamento</label>
-              </div>
+                      <div class="mdl-textfield mdl-js-textfield">
+                        <select class="mdl-textfield__input">
+                          <option value="credito">Crédito</option>
+                          <option value="debito">Débito</option>
+                        </select>
+                      </div>
 
-              <input class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit" value="Salvar">
-              <input class="mdl-button mdl-js-button mdl-js-ripple-effect" type="reset" value="Novo">
-            </form>
+                      <input class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit" value="Salvar">
+                      <input class="mdl-button mdl-js-button mdl-js-ripple-effect" type="reset" value="Apagar">
+                    </form>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--6-col">
-        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        <table class="mdl-data-table mdl-js-data-table mdl-shadow--16dp">
           <thead>
             <tr>
               <th>Código</th>
@@ -82,10 +92,32 @@
           </tbody>
         </table>
       </div>
+      <div class="mdl-cell mdl-cell--4-col">
 
+          <div class="mdl-data-table mdl-js-data-table mdl-shadow--16dp">
+            <div class="mdl-card__actions">
+              <h5 class="alinha-valor">Valor Acumulado</h5>
+              <h3 class="alinha-valor">R$1200,00</h3>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="mdl-data-table mdl-js-data-table mdl-shadow--16dp">
+            <div class="mdl-card__actions">
+              <h5 class="alinha-valor">Valor Acumulado</h5>
+              <h3 class="alinha-valor">R$1200,00</h3>
+            </div>
+
+        </div>
+      </div>
     </div>
 
     <script type="text/javascript" src="../bower_components/dist/jquery.min.js"></script>
     <script src="../bower_components/material-design-lite/material.min.js"></script>
+    <script type="text/javascript" src="js/modal.js">
+
+
+    </script>
   </body>
 </html>

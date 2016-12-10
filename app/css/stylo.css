@@ -91,9 +91,24 @@ a.opened ~ .modal .inner-modal .content {
 
 .cartao {
   background: #FFFFFF;
-  color: black;
+  color: #000000;
 }
 
 .alinha-valor {
   text-align: center;
+}
+
+.valor-acumulado {
+  color: #FFFFFF;
+  background:#006400;
+}
+
+.valor-pagar {
+  color: #FFFFFF;
+  background: #DC143C;
+}
+
+.valor-mes {
+  color: #FFFFFF;
+  background: #20B2AA;
 }

@@ -15,7 +15,7 @@ app.on('ready', function() {
   janela.webContents.openDevTools();
 
   janela.loadURL(url.format({
-    pathname: path.join(__dirname, "/app/app/index.html"),
+    pathname: path.join(__dirname, "/app/index.html"),
     protocol: "file"
   }));
 });
